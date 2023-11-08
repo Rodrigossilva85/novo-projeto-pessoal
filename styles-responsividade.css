@@ -1,0 +1,28 @@
+.container{
+  display:flex;
+}
+
+.quadrado {
+  border: 1px red solid;
+  width: 50%;
+  height: 200px;
+}
+
+.quadrado2 {
+  border: 1px blue solid;
+  width: 50%;
+  height: 200px;
+
+}
+@media (max-width:1000px) {
+  .quadrado {
+    width:100%
+  }
+  .quadrado2 {
+    width:100%
+  }
+
+  .container{
+    flex-direction: column
+  }
+}

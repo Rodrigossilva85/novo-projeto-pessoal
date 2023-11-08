@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      PREECHIMENTO DE FORMULÁRIO
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <spript type="text/javascript" href ="./cep.js"></spript>
+  </head>
+  
+  <body>
+    <form  id="formulario-cadastrado" onsubmit="enviarFormulario(event)">
+      
+      <label class="input-label" for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Insira seu nome" />
+      
+      <span for="email" class="input-label">Email:</span>
+      <input type="text" id="email" placeholder="Insira seu email" />
+      
+      <button class="input-label" type="submit">ENVIAR</button>
+    </form>
+    <script>
+      function enviarFormulario(event){
+        
+        event.preventDefault();
+        console.log(document)
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        
+        /*console.log('Nome: ', nome)*/
+        /*console.log('Email:', email)*/
+        
+        if (nome === undefined || nome  === ''){
+          alert('Preencha seu Nome!')
+          return;
+        }
+        
+        if (email === undefined || email === ''){
+          alert('Preencha seu Email!')
+          return;
+        }
+        
+        document.getElementById('formulario-cadastrado').submit();
+      }
+      </script>
+    
+    <div class="primeiro-titulo"> 
+      <ul>
+        <button class="fonte"><a href="https://ultima.school/">Cursos</a></button>
+        <button class="fonte"><a href="https://edu.ultima.school/lgn/">Login</a></button>
+        <button class="fonte"><a href="https://edu.ultima.school/pt/">Estude de graça</a></button>
+        <button class="fonte"><a href="https://flexboxfroggy.com/">Quiz</a></button>
+      </ul>
+      
+      <h1 class="titulo cabecalho">
+        Cuidar é Amar o próximo
+      </h1>
+      
+      <div>
+        <label> você é Técnico de enfermagem (sim ou não)</label>
+        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+      </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+           <label for="txtCep">Cep:</label>
+           <input type="text" class="form-control" id="txtCep" placeholder="Digite seu Cep" name="Cep">
+
+        </div>
+      <div class="form-row ">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Endereço:</label>
+          <input type="text" class="form-control" id="txtStreet" placeholder="Rua, Av ou Estrada">
+        </div>
+        
+        <div class="form-group col-md-6">
+          <label for="txtbairro">Bairro:</label>
+          <input type="text" class="form-control" id="txtNeighborhood" placeholder="Bairro">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="txtCidade">Cidade:</label>
+          <input type="text" class="form-control" id="txtCity" placeholder="Digite sua Cidade!">
+        </div>
+        
+        <div class="form-group col-md-6">
+          <label for="txtState">Estado:</label>
+          <input id="txtState" class="form-control">
+        </div>
+            
+        <div class="form-group col-md-6">
+          <label for="inputcontato">Contato:</label>
+          <input type="text" class="form-control" id="inputContato" placeholder="Digite seu contato!">
+        </div>
+        
+        <div class="form-group col-md-6">
+          <label for="txtnomecompleto"> Nome completo: </label>
+          <input type="text" class="form-control" id="txtnomecompleto" placeholder="Nome Completo">
+        </div> 
+        
+        <div class="form-group col-md-6">
+          <label for="txtnumerodocoren">Número do Coren:</label>
+          <input type="text" class="form-control" id="txtnumerodocoren" placeholder="Número do coren">
+        </div>
+        
+            
+      </div>
+    </form>
+  </body>
+</html> 
+      
+        
+  
+         
+      
+        
+
+    
+      
+      

@@ -1,0 +1,32 @@
+.titulo {
+    background-color: pink;
+    font-family: italic;
+
+  }
+  .primeiro-titulo{
+    font-size: 40px;
+
+  }
+  .input-label{
+    margin:20px;
+  }
+  .input-label:hover {
+    color: #5294F9
+  }
+  /* ID */
+  #nome{
+    font-weight:bold
+  }
+  /* elementos */
+  p {
+    color: red
+  }
+
+  .cabecalho {
+    display:flex;
+    align-items: center;
+    content: normal;
+  }
+  .fonte{
+    font-size: 30px;
+  }
