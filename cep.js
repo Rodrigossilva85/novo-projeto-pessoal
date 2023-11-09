@@ -11,10 +11,10 @@ function buscaCep(){
             //tratar a resposta da requisição:
             req.onload = function(){
                 if(req.status === 200);
-                let endereco = JSON.parse(req.responso);
+                let endereco = JSON.parse(req.response);
                 document.getElementById("txtStreet").value = endereco.street;
-                document.getElementById("txtNeighborhood").value = endereco.neighborhoor;
-                document.getElementById("txtCity").value = endereco.City;
+                document.getElementById("txtNeighborhood").value = endereco.neighborhood;
+                document.getElementById("txtCity").value = endereco.city;
                 document.getElementById("txtState").value = endereco.state;
              }
         
